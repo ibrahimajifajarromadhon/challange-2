@@ -99,7 +99,7 @@ function getInfoPenjualan(dataPenjualanNovel) {
   //Mengatur tampilan output dari objek informasiPenjualan seperti totalKeuntungan, totalModal, persentaseKeuntungan
   informasiPenjualan.totalKeuntungan = "Rp." + formatRupiah(informasiPenjualan.totalKeuntungan);
   informasiPenjualan.totalModal = "Rp." + formatRupiah(informasiPenjualan.totalModal);
-  informasiPenjualan.persentaseKeuntungan = informasiPenjualan.persentaseKeuntungan.toFixed(0) + "%";
+  informasiPenjualan.persentaseKeuntungan = informasiPenjualan.persentaseKeuntungan.toFixed(2) + "%";
 
   // Mengembalikan informasiPenjualan
   return informasiPenjualan;
